@@ -28,15 +28,9 @@ public class JellyfishScript : MonoBehaviour
         return false;
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void ResetFlash() 
     {
-        
+        _hasFlashed = false;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
