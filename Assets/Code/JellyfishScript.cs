@@ -20,8 +20,7 @@ public class JellyfishScript : MonoBehaviour
 
         if (Energy > MaxEnergy)
         {
-            Energy = 0;
-            _hasFlashed = true;
+            Glow();
             return true;
         }
 
@@ -31,6 +30,14 @@ public class JellyfishScript : MonoBehaviour
     public void ResetFlash() 
     {
         _hasFlashed = false;
+        GetComponent<GlowScript>().Darken();
+    }
+
+    private void Glow()
+    {
+        Energy = 0;
+        _hasFlashed = true;
+        GetComponent<GlowScript>().Glow();
     }
 
 }
