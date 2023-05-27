@@ -18,6 +18,11 @@ public class GameManagerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (SkipStart)
+        {
+            return;
+        }
+
         //Generate Jellyfish
         for(var x = RangeMin.x; x <= RangeMax.x; x++)
         {
@@ -78,7 +83,7 @@ public class GameManagerScript : MonoBehaviour
             if (hasGlow)
             {
                 var neighbours = FindNeighbours(jellyfish);
-                neighbours.ForEach(n => n.GetComponent<JellyfishScript>().Energize());
+                EnergizeJelllyfishes(neighbours);
             }
         }
     }

@@ -49,4 +49,5 @@ MonoBehaviour:
   RangeMin: {x: 0, y: 0, z: 0}
   RangeMax: {x: 0, y: 0, z: 0}
   RoundMilliseconds: 0
-  NeighbourRadius: 0
+  NeighbourRadius: 1
+  Jellyfishes: []

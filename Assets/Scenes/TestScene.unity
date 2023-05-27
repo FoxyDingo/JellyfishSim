@@ -316,6 +316,10 @@ PrefabInstance:
       propertyPath: SkipStart
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6668636122320851684, guid: c1cce49151e1ca446a45bd4bef223e49, type: 3}
+      propertyPath: NeighbourRadius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6668636122320851685, guid: c1cce49151e1ca446a45bd4bef223e49, type: 3}
       propertyPath: m_RootOrder
       value: 1
